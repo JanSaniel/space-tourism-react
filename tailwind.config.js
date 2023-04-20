@@ -8,6 +8,10 @@ module.exports = {
       barlowCondensed: ["Barlow Condensed","sans-serif"],
       barlow: ["Barlow","sans-serif"],
     },
+    screens:{
+      'md': '890px',
+      'fs': '1440px'
+    },
   },
   plugins: [],
 }
