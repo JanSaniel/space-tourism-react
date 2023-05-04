@@ -9,9 +9,15 @@ module.exports = {
       barlow: ["Barlow","sans-serif"],
     },
     screens:{
-      'md': '890px',
-      'fs': '1440px'
+      'md': '1040px',
+      'fs': '1440px',
+      'ts': '530px',
     },
+    backgroundImage: {
+      'home-desktop': "url('./assets/home/background-home-desktop.jpg')",
+      'home-tablet': "url('./assets/home/background-home-tablet.jpg')",
+      'home-mobile': "url('./assets/home/background-home-mobile.jpg')",
+    }
   },
   plugins: [],
 }

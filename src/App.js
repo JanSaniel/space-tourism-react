@@ -4,9 +4,13 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
+    <div className=" bg-home-mobile md:bg-home-desktop ts:bg-home-tablet bg-no-repeat bg-cover">
+       <Navbar/>
+        <Hero/>
+       
+     
+     
+      
     </div>
   );
 }
