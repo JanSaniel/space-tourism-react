@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: url("./assets/home/background-home-desktop.jpg") no-repeat;
-    background-size: cover;
-  }

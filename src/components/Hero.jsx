@@ -33,6 +33,7 @@ const Hero = () => {
             EXPLORE
         </button>
       </div>
+     
   );
 };
 
