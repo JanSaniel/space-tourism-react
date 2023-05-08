@@ -7,7 +7,9 @@ const Navbar = () => {
   const normalLink = " ";
   const activeLink = "relative cursor-pointer transition-all duration-500"
                     +"before:content-[''] before:absolute before:left-0 before:w-full before:h-[4px] before:opacity-100 before:duration-500 before:bg-white md:before:-bottom-2 ts:before:-bottom-6";
-
+  const mobileNormalLink = " ";
+  const mobileActiveLink = "relative cursor-pointer transition-all duration-500 "
+  +" before:content-[''] before:absolute before:right-0 before:w-1 before:h-[30px] before:opacity-100 before:duration-500 before:bg-white ";
 
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -94,24 +96,44 @@ const Navbar = () => {
       <ul className={nav ?'absolute md:hidden ts:hidden z-10 font-barlowCondensed text-[18px] right-0 top-[0] w-[254px] h-full border-r border-r-gray-900 bg-white bg-opacity-[4%] backdrop-blur-[50px] ease-in-out duration-500'
                          :'font-barlowCondensed text-[18px] top-[0] w-[254px] h-full border-r border-r-gray-900 bg-white bg-opacity-[4%] backdrop-blur-[50px] ease-in-out duration-500 fixed right-[-100%] '}>
             
-                <li className="pl-10 pt-[118px] pb-10 text-white tracking-[3px] font-medium
-                               before:content-[''] before:absolute before:right-0 before:w-1 before:h-[30px]  
-                               before:opacity-100 before:duration-500 before:bg-white">00 HOME</li>
-                <li className="pl-10 pb-10 text-white tracking-[3px]
-                               relative cursor-pointer transition-all duration-500 font-medium
-                               before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
-                               before:opacity-0 before:duration-500 before:bg-white
-                               hover:before:h-[30px] hover:before:opacity-100">01 DESTINATION</li>
-                <li className="pl-10 pb-10 text-white tracking-[3px]
-                               relative cursor-pointer transition-all duration-500 font-medium
-                               before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
-                               before:opacity-0 before:duration-500 before:bg-white
-                               hover:before:h-[30px] hover:before:opacity-100">02 CREW</li>
-                <li className="pl-10 pb-10 text-white tracking-[3px]
-                               relative cursor-pointer transition-all duration-500 font-medium
-                               before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
-                               before:opacity-0 before:duration-500 before:bg-white
-                               hover:before:h-[30px] hover:before:opacity-100">03 TECHNOLOGY</li>
+                <li className='mt-[118px]'>
+                <NavLink to="/" className={({ isActive }) => (isActive ? mobileActiveLink : mobileNormalLink)}>
+                                <p className="pl-8 h-8 text-white tracking-[3px] 
+                                relative cursor-pointer transition-all duration-500 font-medium
+                                before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
+                                before:opacity-0 before:duration-500 before:bg-white
+                                hover:before:h-[30px] hover:before:opacity-100">00 HOME</p> 
+                                </NavLink>
+                </li>
+                <li className='mt-[25px]'>
+                <NavLink to="/destination" className={({ isActive }) => (isActive ? mobileActiveLink : mobileNormalLink)}>
+                                <p className=" pl-8 h-8 text-white tracking-[3px] 
+                                relative cursor-pointer transition-all duration-500 font-medium
+                                before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
+                                before:opacity-0 before:duration-500 before:bg-white
+                                hover:before:h-[30px] hover:before:opacity-100">01 DESTINATION</p> 
+                                </NavLink>
+                </li>
+                <li className='mt-[25px]'>
+                <NavLink to="/crew" className={({ isActive }) => (isActive ? mobileActiveLink : mobileNormalLink)}>
+                                <p className="pl-8 h-8 text-white tracking-[3px] 
+                                relative cursor-pointer transition-all duration-500 font-medium
+                                before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
+                                before:opacity-0 before:duration-500 before:bg-white
+                                hover:before:h-[30px] hover:before:opacity-100">02 CREW</p> 
+                                </NavLink>
+                </li>
+                <li className='mt-[25px]'>
+                <NavLink to="/technology" className={({ isActive }) => (isActive ? mobileActiveLink : mobileNormalLink)}>
+                                <p className="pl-8 h-8 text-white tracking-[3px] 
+                                relative cursor-pointer transition-all duration-500 font-medium
+                                before:content-[''] before:absolute before:right-0 before:w-1 before:h-0  
+                                before:opacity-0 before:duration-500 before:bg-white
+                                hover:before:h-[30px] hover:before:opacity-100">03 TECHNOLOGY</p> 
+                                </NavLink>
+                </li>
+                
+               
           </ul>
     </div>
     
