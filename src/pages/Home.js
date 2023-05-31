@@ -3,7 +3,7 @@ import React from 'react'
 function Home() {
   return (
     <div className='fs:bg-home-desktop  md:bg-home-desktop ts:bg-home-tablet bg-home-mobile bg-no-repeat bg-cover
-                    max-w-full items-center text-center mt-0 h-screen flex flex-wrap flex-col relative  mx-auto
+                    items-center text-center mt-0  flex  flex-col relative  h-screen w-screen
                     md:text-left md:items-start 
                     ts:text-center ts:items-center'>
         <div className='mt-[120px]
@@ -30,7 +30,7 @@ function Home() {
                         md:pl-[9rem] 
                         ts:mt-[50px] 
                         fs:pl-[18rem] '>
-            <p className='text-xl  font-barlow text-[15px] text-[#D0D6F9]  max-w-[327px]
+            <p className='font-barlow text-[15px] text-[#D0D6F9]  w-[327px]
                           md:text-[16px] md:max-w-[444px]
                           ts:text-[16px] ts:max-w-[444px]'>
             Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!

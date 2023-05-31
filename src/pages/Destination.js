@@ -9,13 +9,14 @@ function Destination() {
 
   return (
     <div className='fs:bg-destination-desktop  md:bg-destination-desktop ts:bg-destination-tablet bg-destination-mobile bg-no-repeat bg-cover
-                    max-w-full items-center text-center mt-0 max-h-full flex  flex-col relative  mx-auto
-                    md:text-left md:items-center md:flex md:flex-row md:justify-center
-                    ts:items-center'>
+                    max-w-full items-center text-center mt-0 h-full flex  flex-col relative  mx-auto
+                    md:text-left md:items-center md:flex md:flex-row md:justify-center md:h-screen
+                    ts:items-center
+                    fs:h-screen'>
       <div className='md:w-[50%] fs:w-[40%]'>
         <div className='flex flex-row w-[221px] justify-center 
                         mt-[88px]
-                        md:mt-[200px] md:w-[382px] md:ml-[166px]
+                        md:mt-[150px] md:w-[382px] md:ml-[166px]
                         ts:absolute ts:mt-[136px] ts:ml-6 ts:w-[272px] ts:left-0'>
             <p className='text-[#808080] font-barlowCondensed font-extrabold p-1 text-[16px] tracking-[2.7px]
                           md:text-[28px] md:tracking-[4.72px]
@@ -25,7 +26,7 @@ function Destination() {
                           ts:text-[20px] ts:tracking-[3.38px] ts:ml-0'>PICK YOUR DESTINATION</p>
         </div>
         <div className='
-                       md:h-[445px] md:mt-[350px] md:ml-[100px]
+                       md:h-[445px] md:mt-[310px] md:ml-[100px]
                        ts:h-[300px] ts:mt-[220px]
                        fs:ml-[0px]'> 
             <img src={planet.images.png} className="w-[170px] h-[170px] mt-[51px] ml-6
@@ -74,7 +75,7 @@ function Destination() {
             </p>
         </div>
         <div className='mt-[10px] 
-                        md:mb-[5rem] md:justify-start md:ml-4
+                        md:mb-[0rem] md:justify-start md:ml-4
                         ts:mt-[20px] ts:flex ts:flex-row ts:justify-center
                         fs:mt-[20px] '>
             <div className="pl-10 pr-10
@@ -87,7 +88,7 @@ function Destination() {
                 </h1>
                 <h2 className='text-[#FFFFFF] sm:text-6xl font-bellefair font-thin md:py-1 uppercase
                            text-[28px]
-                           md:text-[28px]
+                           md:text-[28px] md:pb-0
                            ts:text-28px]'>
                   {planet.distance} 
                 </h2>
@@ -101,8 +102,8 @@ function Destination() {
               EST. TRAVEL TIME
             </h1>
             <h2 className='text-[#FFFFFF] sm:text-6xl font-bellefair font-thin md:py-1 uppercase
-                           text-[28px] pb-[70px]
-                           md:text-[28px]
+                           text-[28px] pb-[70px] md:pb-0
+                           md:text-[28px] 
                            ts:text-[28px]'>
               {planet.travel} 
             </h2>
