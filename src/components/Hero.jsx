@@ -2,21 +2,38 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='text-white'>
-      <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-left flex flex-col justify-center'>
-        <p className='md:text-[28px] text-[#D0D6F9] font-barlowCondensed  p-1'>
+      <div className='max-w-[1440px] items-center text-center mt-[1rem] h-screen flex flex-wrap flex-col relative  mx-auto
+                      md:text-left md:items-start
+                      ts:text-center ts:items-center '>
+        <div className='md:mt-[10rem] md:pl-[9rem] ts:mt-[100px] mt-[50px]'>
+          <p className='text-[#D0D6F9] font-barlowCondensed  p-1 text-[16px] tracking-[2.7px]
+                          md:text-[28px] md:tracking-[4.72px]
+                          ts:text-[20px] ts:tracking-[3.38px]'>
             SO, YOU WANT TO TRAVEL TO
-        </p>
-        <h1 className='md:text-[150px] sm:text-6xl text-4xl  font-bellefair font-thin md:py-1'>
-          SPACE
-        </h1>
-        <p className='max-w-[444px] md:text-[18px] text-xl  font-barlow text-[#D0D6F9]'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
-        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
-  <span class="sr-only">Icon description</span>
-</button>
+          </p>
+        </div>
+        <div className='md:mt-[5rem] md:pl-[9rem] ts:mt-[50px] mt-[50px]'>
+          <h1 className='text-[#FFFFFF] sm:text-6xl text-4xl font-bellefair font-thin md:py-1
+                         md:text-[150px] text-[80px]
+                         ts:text-[150px]'>
+            SPACE
+          </h1>
+        </div>
+       <div className='mt-[50px] md:pl-[9rem] ts:mt-[50px] '>
+          <p className='md:max-w-[444px] text-xl  font-barlow text-[15px] text-[#D0D6F9] ts:max-w-[444px] max-w-[327px]
+                        md:text-[16px]
+                        ts:text-[16px]'>
+          Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+          </p>
+        </div>
+        <button className="absolute mt-[450px] text-[20px] tracking-[1.25px] w-[150px] h-[150px] 
+                           rounded-full bg-white font-bellefair   text-sm text-black 
+                           md:mt-[15rem] md:text-[32px] md:tracking-[0.751rem] md:w-[274px] md:h-[274px]  md:right-[150px] 
+                           ts:mt-[30rem] ts:text-[32px] ts:tracking-[2px] ts:w-[242px] ts:h-[242px] ">
+            EXPLORE
+        </button>
       </div>
-    </div>
+     
   );
 };
 
